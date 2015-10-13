@@ -1,0 +1,6 @@
+{
+  "name": "tiy-mikeg-week4-etsylive",
+  "root": "app",
+  "clean_urls": true,
+  "error_page": "error.html"
+}

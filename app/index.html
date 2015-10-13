@@ -1,14 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SAMPLE PROJECT</title>
+  <title>Ets-ish</title>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <h1>Hello World</h1>
+  <nav>
+    <div id="Search"> 
+      <div><a href="#" id="Logo">Etsish</a></div>
+      <div id="SearchBar">
+        <input id="SearchInput">
+        <button id="SearchButton">Search</button>
+      </div>
+      <ul id="HorizontalTop">
+        <a href="#"><li>Sell on Etsish</li></a>
+        <a href="#"><li>Register</li></a>
+        <a href="#"><li id="SignIn">Sign in</li></a>
+      </ul>
+      <div id="cart">
+        <img src="images/cart.png">  
+        <a href="#" id="CartLink">Cart</a>
+      </div>
+    </div>
+    <div id="CategoriesBar"> 
+      <ul id="Categories">
+        <a href="#"><li>Clothing & Accessories</li></a>
+        <a href="#"><li>Jewelry</li></a>
+        <a href="#"><li>Craft Supplies & Tools</li></a>
+        <a href="#"><li>Weddings</li></a>
+        <a href="#"><li>Entertainment</li></a>
+        <a href="#"><li>Home & Living</li></a>
+        <a href="#"><li>Kids & Baby</li></a>
+        <a href="#"><li>Vintage</li></a>
+      </ul>
+    </div>
+  </nav>
 
+  <div id="ContentOverlord">
+    <div id="ContentSidebar">
+      <div id="ShowResultsFor">Show results for:
+        <ol id="AllCategories">All Categories
+          <a href="#"><li>Home & Living</li></a>
+          <a href="#"><li>Art & Collectibles</li></a>
+          <a href="#"><li>Weddings</li></a>
+          <a href="#"><li>Clothing</li></a>
+          <a href="#"><li>Jewelry</li></a>
+          <a href="#"><li>Paper & Party Supplies</li></a>
+          <a href="#"><li>Acessories</li></a>
+          <a href="#"><li>Craft Supplies & Tools</li></a>
+          <a href="#"><li>Bags & Purses</li></a>
+          <a href="#"><li>Bath & Beauty</li></a>
+          <a href="#"><li>Shoes</li></a>
+          <a href="#"><li>Books, Movies & Music</li></a>
+          <a href="#"><li>Electronics & Accessories</li></a>
+          <a href="#"><li>Toys & Games</li></a>
+          <a href="#"><li>Pet Supplies</li></a>
+        </ul>
+      </div>
+      <div id="RefineSearch">Refine your search
+        <div>Item Type<br>
+          <input type='radio'><a href="#" class="Radio">All Items</a><br>
+          <input type='radio'><a href="#" class="Radio">Handmade</a><br>
+          <input type='radio'><a href="#" class="Radio">Vintage</a><br>
+          <hr>
+          <p>Price</p>
+          <input class="Money">' to '<input class="Money">
+          <hr>
+          <p>Filter by color</p>
+          <ul class="ColorSwatches">
+            <a href="#" class="ColorSwatch" title="View only red items"><li id="red">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only orange items"><li id="orange">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only yellow items"><li id="yellow">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only green items"><li id="green">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only blue items"><li id="blue">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only purple items"><li id="purple">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only black items"><li id="black">W</li></a>
+            <a href="#" class="ColorSwatch" title="View only white items"><li id="white">W</li></a>
+          </ul>
+          <hr>
+          <p>Ordering Options</p>
+          <input type="radio"><a href="#" class="Radio"> Accepts Etsy Gift Cards</a><br>
+          <input type="radio"><a href="#" class="Radio">Customizable</a><br>
+          <hr>
+          <p>Shop Location</p>
+          <input type="radio"><a href="#" class="Radio">Anywhere</a><br>
+          <input type="radio"><a href="#" class="Radio">United States</a><br>
+          <p><a href="#" id="Custom">Choose a custom location</a></p>
+          <hr>
+          <p>Ship To</p>
+          <select>
+            <option>United States</option>
+            <option>The rest of the world</option>
+          </select>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div id="ContentMain">
+      <div id="CatWhiskey"><a href="#"> All Categories</a> > "whiskey" (25,499 Results)
+      </div>
+      <div id="SortBy">Sort by: <a href="#" id="Rel">Relevancy</a>
+      </div>
+      <div id="TheScript">
+        <script type="text/template" id="info-template">
+          <div class="SingleItem" title="<%= title %>">
+            <img src="<%= Images[0].url_170x135 %>">
+            <div class="title"><%= title %></div>
+            <div class="url"><a href="<%= url %>">Store</a></div>
+            <div class="currency-code"><%= currency_code %></div>
+            <div class="price"><%= price %> </div>
+          </div>
+        </script>
+      </div>  
+    </div>
+  </div>
+  <footer>
+    <div id="RelatedWhiskey">
+      Related to <span>whiskey</span>
+    </div>
+    <div id="ContentRelated">
+       <div class="RelList">
+        <ul>
+          <a href="#"><li>whiskey barrel</li></a>
+          <a href="#"><li>whiskey decanter</li></a>
+          <a href="#"><li>whiskey stones</li></a>
+          <a href="#"><li>jack daniels</li></a>
+        </ul>
+      </div>
+      <div class="RelList">
+        <ul>
+          <a href="#"><li>bourbon</li></a>
+          <a href="#"><li>scotch</li></a>
+          <a href="#"><li>whiskey bottle</li></a>
+          <a href="#"><li>beer</li></a>
+        </ul>
+      </div>
+      <div class="RelList">
+        <ul>
+          <a href="#"><li>cigar</li></a>
+          <a href="#"><li>flask</li></a>
+        </ul>
+      </div>
+    </div>
+    <div id="ContentLooking">
+      Looking for shops? <span><a href="#" class="Look">whiskeyweddingbells</a>, <a href="#" class="Look">WhiskeyDogWares</a>, <a href="#" class="Look">WhiskeysWhims</a>. See more.</span>  
+    </div>
+    <div id="ContentPages"> 
+       <ul>
+        <a href="#"><li class="pages"><</li></a>
+        <a href="#"><li class="Pages">1</li></a>
+        <a href="#"><li class="Pages">2</li></a>
+        <a href="#"><li class="Pages">3</li></a>
+        <a href="#"><li class="Pages">4</li></a>
+        <a href="#"><li class="Pages">5</li></a>
+        <a href="#"><li class="Pages">6</li></a>
+        <a href="#"><li class="Pages">7</li></a>
+        <a href="#"><li class="Pages">8</li></a>
+        <a href="#"><li class="Pages">...</li></a>
+        <a href="#"><li class="Pages">250</li></a>
+        <a href="#"><li class="Pages">></li></a>
+
+       </ul>
+    </div>
+    <div id="">  
+    </div>
+  </footer>
+
+
+<!--   // <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  // <script src="bower_components/underscore/underscore-min.js"></script> -->
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>
